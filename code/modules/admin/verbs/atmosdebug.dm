@@ -30,7 +30,8 @@
 	next_turf:
 		for(var/turf/T in turfs)
 			for(var/dir in cardinal)
-				var/list/connect_types = list(pipe1 = 0, pipe2 = 0, pipe3 = 0)
+				// The list indexes only up to 3 types, if you get a null/out of bounds error, it is likely due to it going to 4 or higher. Easy fix if so. -Possum
+				var/list/connect_types = list(0,0,0)
 				for(var/obj/machinery/atmospherics/pipe in T)
 					if(dir & pipe.initialize_directions)
 						for(var/connect_type in pipe.connect_types)
