@@ -269,6 +269,8 @@ area/space/atmosalert()
 	requires_power = TRUE
 	base_turf = /turf/floor/asteroid
 
+
+
 // CENTCOM
 
 /area/centcom

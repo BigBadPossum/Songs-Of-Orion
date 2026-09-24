@@ -14032,9 +14032,10 @@
 /turf/floor/tiled/techmaint_panels,
 /area/eris/maintenance/section2deck3port)
 "aHP" = (
-/obj/effect/shuttle_landmark/supply/station,
-/turf/space,
-/area/space)
+/obj/machinery/trade_beacon/receiving,
+/obj/effect/floor_decal/industrial/outline/blue,
+/turf/floor/tiled/dark/techfloor,
+/area/eris/quartermaster/storage)
 "aHQ" = (
 /obj/structure/table/rack,
 /obj/item/clothing/gloves/stungloves,
@@ -14047,6 +14048,7 @@
 /turf/floor/tiled/techmaint_perforated,
 /area/eris/maintenance/section2deck3starboard)
 "aHS" = (
+/obj/machinery/trade_beacon/sending,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/floor/tiled/dark/techfloor,
 /area/eris/quartermaster/storage)
@@ -51068,14 +51070,7 @@
 /area/eris/quartermaster/office)
 "csJ" = (
 /obj/effect/decal/warning_stripes,
-/obj/machinery/door/airlock/external{
-	frequency = 1380;
-	icon_state = "door_locked";
-	id_tag = "cargo_bay_door";
-	locked = 1;
-	name = "Cargo Docking Hatch";
-	req_access = list(13)
-	},
+/obj/machinery/door/airlock/external,
 /turf/floor/tiled/steel/monofloor,
 /area/eris/quartermaster/hangarsupply)
 "csK" = (
@@ -52462,14 +52457,7 @@
 /turf/floor/plating/under,
 /area/eris/maintenance/section1deck3central)
 "cwu" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1380;
-	icon_state = "door_locked";
-	id_tag = "cargo_bay_door";
-	locked = 1;
-	name = "Cargo Docking Hatch";
-	req_access = list(13)
-	},
+/obj/machinery/door/airlock/external,
 /turf/floor/tiled/steel/monofloor,
 /area/eris/quartermaster/hangarsupply)
 "cwv" = (
@@ -95261,7 +95249,7 @@ aFW
 aFX
 aHo
 aHo
-aHw
+aHP
 aHo
 aHo
 aHW
@@ -116218,7 +116206,7 @@ crJ
 crJ
 crJ
 crJ
-aHP
+crJ
 crJ
 crJ
 crJ
