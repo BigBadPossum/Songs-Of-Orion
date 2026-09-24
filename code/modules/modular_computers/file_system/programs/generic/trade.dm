@@ -538,6 +538,22 @@
 				reset_shop_list()
 				return TRUE
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		if(href_list["PRG_toogle_shuttle"])
+			if(IS_SHIP_LEVEL(SStrade.shuttle.current_location.z))
+				if(length(SStrade.shuttle.get_mobs()))
+					to_chat(usr, "For safety reasons the automated supply shuttle cannot transport live organisms, classified nuclear weaponry or homing beacons.")
+				else
+					SStrade.shuttle.launch(src)
+					to_chat(usr, "Initiating launch sequence.")
+			else
+				SStrade.shuttle.launch(src)
+				to_chat(usr, "The supply shuttle has been called and will arrive shortly.")
+			return TRUE
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 		if(sending)
 			if(href_list["PRG_export"])
 				if(get_area(sending) != get_area(computer) && program_type != "master")
